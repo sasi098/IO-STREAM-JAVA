@@ -5,9 +5,18 @@ public class BUFFER {
         File file = new File("file2.txt");
         FileWriter fr = new FileWriter(file);
         BufferedWriter bw = new BufferedWriter(fr);
-        bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk");
-        bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk");
-        bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk");
+        bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk\n");
+        bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk\n");
+        bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk\n");
         bw.close();
+
+        //buffer reader
+        BufferedReader br = new BufferedReader((new FileReader("file2.txt")));//IN ONE LINE // WRAPPING ANONYMUS OBJECT
+        int x;
+        while((x = br.read()) != -1){
+            System.out.print((char) x);
+        }
+
+        br.close();
     }
 }
