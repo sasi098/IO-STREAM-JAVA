@@ -4,7 +4,7 @@ import java.util.*;
 class Person implements Serializable{
     private String name;
     private int age;
-    private Long num;
+    transient private Long num;//no chage in that varibles -> it default value in the thing -> DIFFERENCE IN OUTPUT WHILE OBJECT BACK
 
     public Person(String name,int age,Long num){
         this.name = name;
