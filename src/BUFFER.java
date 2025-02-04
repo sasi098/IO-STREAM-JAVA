@@ -12,10 +12,16 @@ public class BUFFER {
 
         //buffer reader
         BufferedReader br = new BufferedReader((new FileReader("file2.txt")));//IN ONE LINE // WRAPPING ANONYMUS OBJECT
-        int x;
-        while((x = br.read()) != -1){
-            System.out.print((char) x);
+//        int x;
+//        while((x = br.read()) != -1){
+//            System.out.print((char) x);
+//        }
+
+        String line;//TPGET LINES NOT BY CHARACTER BY CHARACTER
+        while((line = br.readLine()) != null){
+            System.out.println(line);
         }
+
 
         br.close();
     }
