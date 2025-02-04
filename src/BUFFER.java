@@ -6,7 +6,7 @@ public class BUFFER {
         FileWriter fr = new FileWriter(file);
         BufferedWriter bw = new BufferedWriter(fr);
         bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk\n");
-        bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk\n");
+        bw.write("bkbnlMdkblkbnlbkgdnblkgbnlbkgnglkn;slk\n");
         bw.write("bkbnldkblkbnlbkgdnblkgbnlbkgnglkn;slk\n");
         bw.close();
 
